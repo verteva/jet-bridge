@@ -74,7 +74,7 @@ class BaseAPIView(object):
             headers['Access-Control-Allow-Headers'] = 'Authorization,DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,X-Application-Warning,X-HTTP-Method-Override,X-Bridge-Settings,X-Stick-Session'
             headers['Access-Control-Expose-Headers'] = 'Content-Length,Content-Range,Content-Disposition,Content-Type,X-Application-Warning'
             headers['Access-Control-Allow-Credentials'] = 'true'
-
+            headers['Access-Control-Allow-Private-Network'] = 'true'
         return headers
 
     def error_response(self, request, exc_type, exc, traceback):
