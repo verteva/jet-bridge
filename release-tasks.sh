@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # for PostgreSQL
-pip install psycopg2-binary==2.8.3
+pip install -r requirements.txt
 # for MySQL
 #apt update
 #apt install libmysqlclient-dev python-dev
